@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextTextTelno"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:hint="+90 (###) ###-####"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTckn" />
+
+    <TextView
+        android:id="@+id/adSoyadTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefon Numarası"
+        android:paddingLeft="15dp"
+        android:textColor="#19456C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextTelno"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextTelno" />
+
+    <EditText
+        android:id="@+id/editTextAdsoyad"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:maxLength="50"
+        android:gravity="left|center_vertical"
+        android:hint="Giriniz"
+        android:inputType="textPersonName|textCapWords"
+        android:paddingLeft="15dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adSoyadTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ad Soyad"
+        android:paddingLeft="15dp"
+        android:textColor="#19456C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAdsoyad"
+        app:layout_constraintStart_toStartOf="@+id/editTextAdsoyad" />
+
+    <EditText
+        android:id="@+id/editTextTckn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:hint="Giriniz"
+        android:inputType="number"
+        android:maxLength="11"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdsoyad" />
+
+    <TextView
+        android:id="@+id/tcknTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TC Kimlik No"
+        android:textColor="#19456C"
+        android:paddingLeft="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTckn"
+        app:layout_constraintStart_toStartOf="@+id/editTextTckn" />
+
+    <Button
+        android:id="@+id/imageButton4"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button"
+        android:onClick="nextPageButton"
+        android:text="İlerle"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/yk_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
