@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    tools:context=".ThirdPage">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/yk_logo" />
+
+    <TextView
+        android:id="@+id/editTextTaksitTarihi"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:onClick="dateButton"
+        android:paddingLeft="15dp"
+        android:hint="Seçiniz"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVade" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:onClick="dateButton"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTaksitTarihi"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTaksitTarihi"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="@+id/editTextTaksitTarihi"
+        app:layout_constraintTop_toTopOf="@+id/editTextTaksitTarihi"
+        app:srcCompat="@drawable/ic_baseline_today_24" />
+
+
+    <TextView
+        android:id="@+id/taksitTarihiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İlk Taksit Tarihi"
+        android:paddingLeft="15dp"
+        android:textColor="#19456C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTaksitTarihi"
+        app:layout_constraintStart_toStartOf="@+id/editTextTaksitTarihi" />
+
+    <EditText
+        android:id="@+id/editTextKredi"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:hint="Max 25.000 TL"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/krediTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kredi Miktarı"
+        android:paddingLeft="15dp"
+        android:textColor="#19456C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextKredi"
+        app:layout_constraintStart_toStartOf="@+id/editTextKredi" />
+
+
+    <TextView
+        android:id="@+id/buttonVade"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/black"
+        android:onClick="expiryButton"
+        android:paddingLeft="15dp"
+        android:hint="Seçiniz"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKredi" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:onClick="expiryButton"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonVade"
+        app:layout_constraintEnd_toEndOf="@+id/buttonVade"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="@+id/buttonVade"
+        app:layout_constraintTop_toTopOf="@+id/buttonVade"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+
+    <TextView
+        android:id="@+id/vadeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vade"
+        android:textColor="#19456C"
+        android:paddingLeft="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVade"
+        app:layout_constraintStart_toStartOf="@+id/buttonVade" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaksitTarihi"
+        app:srcCompat="@drawable/custom_text_input" />
+
+    <TextView
+        android:id="@+id/textViewFaiz"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:text="Faiz Oranı:"
+        android:textAllCaps="false"
+        android:textColor="#0162BC"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaksitTarihi" />
+
+    <TextView
+        android:id="@+id/textViewTaksit"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:text="Taksit Tutarı:"
+        android:textAllCaps="false"
+        android:textColor="#0162BC"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFaiz" />
+
+
+    <TextView
+        android:id="@+id/textViewFaizOranı"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:text="%1,36"
+        android:textAllCaps="false"
+        android:textColor="#0162BC"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaksitTarihi" />
+
+    <TextView
+        android:id="@+id/textViewTaksitTutarı"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="#0162BC"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFaiz" />
+
+    <Button
+        android:id="@+id/tamamButton"
+        android:layout_width="270dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button"
+        android:onClick="nextPageButton"
+        android:text="İlerle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
